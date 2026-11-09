@@ -1,6 +1,8 @@
 % Tokrat bomo uporabili amsart, format za clanke American Mathematical Society
 \documentclass{amsart}
 
+
+
 % Kodranje in podpora slovenščini
 \usepackage[T1]{fontenc}        % kodiranje znakov v .pdf
 \usepackage[utf8]{inputenc}     % kodiranje znakov v .tex
@@ -21,15 +23,15 @@
 \usepackage{xypic}    % paket za diagrame
 
 % Definicija okolij izrek, posledica
+\usepackage{amsthm}
+
 {\theoremstyle{plain}
-\newtheorem{izrek}{Izrek}[section]
-\newtheorem{posledica}[izrek]{Posledica}
+\newtheorem{izrek}{Izrek}
 }
 
 % Definicija okoli za definicije in vaje
 {\theoremstyle{definition}
-\newtheorem{definicija}[izrek]{Definicija}
-\newtheorem{vaja}[izrek]{Vaja}
+\newtheorem{definicija}{Definicija}
 }
 
 % \title[kratek naslov]{poln naslov}
